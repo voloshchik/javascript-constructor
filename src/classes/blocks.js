@@ -16,7 +16,7 @@ export class TitleBlock extends Block {
   }
 
   toHtml() {
-    const { tag = h1, styles } = this.options;
+    const { tag = 'h1', styles } = this.options;
 
     return row(col(`<${tag}>${this.value}</${tag}>`), css(styles));
   }
@@ -44,6 +44,8 @@ export class TextBlock extends Block {
     super(value, options);
   }
   toHtml() {
-    return row(col(`<p>${this.value}</p>`), css(this.options.styles));
+    const temp = this.options.styles;
+    console.log('temp', temp);
+    return row(col(`<p>${this.value}</p>`), css(temp));
   }
 }

@@ -12,7 +12,7 @@ export const model = [
     },
   }),
 
-  new TextBlock('Конструктор сайтов на чистом JavaScript', {
+  new TextBlock('Позволяет в пару кликов создавать сайты', {
     styles: {
       background: 'linear-gradient(to left, #f2994a, #f2c94c)',
       padding: '1rem',
@@ -40,7 +40,7 @@ export const model = [
     },
     alt: 'Это картинка',
   }),
-  new TextBlock('Конструктор сайтов на чистом JavaScript', {
+  new TextBlock('подержка volosh', {
     styles: {
       background: 'linear-gradient(to left, #f2994a, #f2c94c)',
       padding: '1rem',
