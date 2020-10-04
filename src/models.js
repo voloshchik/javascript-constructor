@@ -1,4 +1,4 @@
-import image from '../assets/image.png';
+import image from '../assets/evan.jpeg';
 import { TitleBlock, ImageBlock, ColumnsBlock, TextBlock } from './classes/blocks';
 
 export const model = [
@@ -20,14 +20,21 @@ export const model = [
     },
   }),
 
-  new ColumnsBlock(['111111111111', '222222222222', '333333333333'], {
-    styles: {
-      background: 'linear-gradient(to bottom, #8e2de2, #4a00e0)',
-      padding: '2rem',
-      color: '#fff',
-      'font-weight': 'bold',
-    },
-  }),
+  new ColumnsBlock(
+    [
+      'Приложение на чистом JavaScript, без использования библиотек',
+      'JavaScript - это просто, интересно. ',
+      'масштабируемый код',
+    ],
+    {
+      styles: {
+        background: 'linear-gradient(to bottom, #8e2de2, #4a00e0)',
+        padding: '2rem',
+        color: '#fff',
+        'font-weight': 'bold',
+      },
+    }
+  ),
   new ImageBlock(image, {
     styles: {
       padding: '2rem 0',
